@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group Display Names</title>
+</head>
+<body>
+
+<!-- Edit your group number below -->
+<h1></h1> 
+
+<h2>List of Names</h2>
+
+<!-- This is the container where we will display the names -->
+<ol id="nameList"></ol>
+
+<script>
+    // Your array of names
+    // Modify your group members in UPPERCASE using the format: Lastname, FirstName
+    var namesArray = ["nameN"];
+
+    // Get the container element
+    var nameListContainer = document.getElementById("nameList");
+
+    // Loop through the names and create a list
+    for (var i = 0; i < namesArray.length; i++) {
+        // Create a list element for each name
+        var ol = document.createElement("li");
+
+        // Set the text content of the list to the current name
+        ol.textContent = namesArray[i];
+
+        // Append the list to the container
+        nameListContainer.appendChild(ol);
+    }
+</script>
+
+</body>
+</html>
